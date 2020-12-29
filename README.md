@@ -12,6 +12,10 @@ Commands:
 2. To just build node addon : npm run build-nodeaddon : this will go to c++ project path where binding.gyp file is present and build the cpp files and copy the .node file from node-addon\build\Release\testaddon.node to ./node_modules.Same is accessed in index.js by declaring 
 const testAddon = require('testaddon');
 
+Note: You will need 
+a) python in your build setup , I have python version 2.7.13 
+b) Visual studio C++ build tools , I have Visual Studio 2015.
+
 3. To run the electron application : npm run start
 
 Application desciption :
