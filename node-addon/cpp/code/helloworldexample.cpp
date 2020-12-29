@@ -1,7 +1,7 @@
 #include "helloworldexample.h"
 
 std::string helloworldexample::hello(){
-    return "Hello World!!";
+    return "Hello World!";
 }
 
 Napi::String helloworldexample::HelloWrapped(const Napi::CallbackInfo& info) {
