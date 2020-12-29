@@ -3,13 +3,13 @@
         "target_name": "testaddon",
         "cflags!": [ "-fno-exceptions" ],
         "cflags_cc!": [ "-fno-exceptions" ],
-        "sources": [
+        "sources": 
+        [
             "cpp/main.cpp",
             "cpp/code/helloworldexample.cpp",
-            "cpp/code/testclass.cpp",
-            "cpp/code/classexample.cpp"
         ],
-        'include_dirs': [
+        'include_dirs': 
+        [
             "<!@(node -p \"require('node-addon-api').include\")"
         ],
         'libraries': [],

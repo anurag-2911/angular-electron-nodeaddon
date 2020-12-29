@@ -49,7 +49,7 @@ app.on('activate', function () {
 ipcMain.handle('hellomsg', async (event, msg) => {
   console.log('in main process getting msg from renderer: ' + msg);
   const result = await getHelloMsg(msg);
-  console.log('returning result' + result);
+  console.log('returning result ' + result);
   return result
 })
 
